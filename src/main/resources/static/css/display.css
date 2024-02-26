@@ -1,0 +1,22 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightcyan;
+}
+
+.inline-block {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90pt;
+    color: #CC0633;
+}
+
+a {
+    display: inline-block;
+}

@@ -1,0 +1,16 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightcyan;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90pt;
+    color: #CC0633;
+}
+
+#checkid {
+    border:1px solid #000;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/display.css">
+</head>
+<body>
+    <main class="container-fluid">
+        <h1 class="text-center mt-5 mb-4">Student Display</h1>
+        <div class="container-fluid student" style="width: 100%; max-width: 700px; height: 500px;border: 2px solid black; padding: 10px;">
+            <a th:each="student:${stu}" th:href="'/update/'+${student.name}+${student.uid}" class="inline-block student" th:style="'width:'+${student.weight}+'px; height:'+(${student.height} * 1.5)+'px; border: 1px solid black;'">
+                <span class="details" th:text="${student.name}" th:style="'text-align: center; color:'+${student.hairColor}+'; display: block;'"></span>
+                <span class="details" th:text="${student.gpa}" th:style="'text-align: center; display: block;'"></span>
+            </a>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <a href="/home.html" class="d-grid gap-2">
+                    <button class="btn btn-primary">Home</button>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

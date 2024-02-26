@@ -1,0 +1,33 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightcyan;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90pt;
+    color: #CC0633;
+}
+
+#functions{
+    display: grid;
+    width: 600px;
+    grid-template-columns: 120px 120px 120px 120px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#StudentDis, #StudentList, #StudentAdd, #StudentDel, #StudentEdit {
+    margin: 15px;
+    position: relative;
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    flex: auto;
+}
+
+
